@@ -18,20 +18,21 @@ The project is an academic demonstration. It is not a production clinical-record
 ## 2. Database design
 The database contains three related tables:
 
-| `PATIENTS` | Stores patient identity and contact information | One patient can have many appointments |
-| `DOCTORS` | Stores doctor details and specialization | One doctor can have many appointments |
-| `APPOINTMENTS` | Stores each booking | Each appointment references one patient and one doctor |
 
-`APPOINTMENTS.patient_id` references `PATIENTS.patient_id`; `APPOINTMENTS.doctor_id` references `DOCTORS.doctor_id`.
+| PATIENTS | Stores patient identity and contact information | One patient can have many appointments |
+| DOCTORS | Stores doctor details and specialization | One doctor can have many appointments |
+| APPOINTMENTS | Stores each booking | Each appointment references one patient and one doctor |
+
+APPOINTMENTS.patient_id references PATIENTS.patient_id; APPOINTMENTS.doctor_id references DOCTORS.doctor_id.
 
 
 ```
 
 ## 4. Requirements demonstrated
-- User-defined PL/SQL records and table `%ROWTYPE`.
+- User-defined PL/SQL records and table %ROWTYPE.
 - A nested-table collection.
-- Implicit cursor attributes: `SQL%ROWCOUNT`, `SQL%FOUND`, and `SQL%NOTFOUND`.
-- Explicit cursor processing using `OPEN`, `FETCH`, and `CLOSE`.
+- Implicit cursor attributes: SQL%ROWCOUNT, SQL%FOUND, and SQL%NOTFOUND.
+- Explicit cursor processing using OPEN, FETCH, and CLOSE.
 - `BULK COLLECT` and `FORALL ... SAVE EXCEPTIONS`.
 - Stored procedures with IN and OUT parameters.
 - Stored functions returning meaningful values.
