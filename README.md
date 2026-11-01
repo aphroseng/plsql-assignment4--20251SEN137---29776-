@@ -60,6 +60,6 @@ The scripts use Oracle identity columns and FETCH FIRST-independent SQL. Use Ora
 The sample data inserts patients with IDs 1,3 and doctors with IDs 10,12. It inserts appointments with IDs 100, 102. The success test creates an additional patient and appointment, so rerun the schema and sample-data scripts first if you want a clean repeatable test.
 
 ## 7. Screenshots
-this screenshot show the test results about all we did from procedure and functions we have two test one is test suces and other one show test error.
+this screenshot show the test results, about all we did from procedure and functions we have two test .one is test suces and other one show test error.
 ## 8. Academic integrity and AI-use disclosure
-An AI assistant was used to help structure the repository, draft example SQL/PLSQL code, and explain the implementation. The group must review, test, adapt, and understand every file, and must follow the instructor's academic-integrity requirements. Both members remain responsible for the submitted work and should be able to explain it during the presentation.
+An AI assistant was used to help structure the repository, draft example SQL/PLSQL code, and explain the implementation. The group must review, test, adapt, and understand every file, and must follow the instructor's academic-integrity requirements.
