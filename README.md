@@ -2,8 +2,8 @@
 # Hospital Management System Using Oracle PL/SQL
 
 ## Group members
-- Student 1: `SENGA APHRODIS` ID: `20251SEN137`
-- Student 2: `UHORANAYEZU Tertullien` ID: `29776`
+- Student 1: SENGA APHRODIS ID: 20251SEN137
+- Student 2: UHORANAYEZU Tertullien ID: 29776
 
 
 
@@ -50,9 +50,9 @@ Run the scripts in Oracle SQL Developer or SQL*Plus, connected to a schema where
 7. Capture genuine execution output and save it in screenshots/.
 
 Enable output before running PL/SQL blocks:
-```sql
+sql
 SET SERVEROUTPUT ON;
-```
+
 
 The scripts use Oracle identity columns and FETCH FIRST-independent SQL. Use Oracle Database 12c or later.
 
@@ -60,6 +60,6 @@ The scripts use Oracle identity columns and FETCH FIRST-independent SQL. Use Ora
 The sample data inserts patients with IDs 1,3 and doctors with IDs 10,12. It inserts appointments with IDs 100, 102. The success test creates an additional patient and appointment, so rerun the schema and sample-data scripts first if you want a clean repeatable test.
 
 ## 7. Screenshots
-See screenshots/README.md for the required evidence and suggested image filenames.
+this screenshot show the test results about all we did from procedure and functions we have two test one is test suces and other one show test error.
 ## 8. Academic integrity and AI-use disclosure
 An AI assistant was used to help structure the repository, draft example SQL/PLSQL code, and explain the implementation. The group must review, test, adapt, and understand every file, and must follow the instructor's academic-integrity requirements. Both members remain responsible for the submitted work and should be able to explain it during the presentation.
