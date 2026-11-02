@@ -14,14 +14,14 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('--- TEST 1: Register a patient ---');
     register_patient(
         'Kevin', 'Rukundo', DATE '1995-06-15', 'Male',
-        '+250780000099', 'kevin' || v_suffix || '@example.com', v_patient_id
+        '+250780000099', 'kevin' || v_suffix || 'senga@gmaile.com', v_patient_id
     );
     DBMS_OUTPUT.PUT_LINE('New patient ID: ' || v_patient_id);
 
     DBMS_OUTPUT.PUT_LINE('--- TEST 2: Add a doctor ---');
     add_doctor(
         'Alice', 'Mutesi', 'Dermatology', '+250781000099',
-        'alice' || v_suffix || '@example.com', v_doctor_id
+        'alice' || v_suffix || 'uhoranayezu@gmail.com', v_doctor_id
     );
     DBMS_OUTPUT.PUT_LINE('New doctor ID: ' || v_doctor_id);
 
