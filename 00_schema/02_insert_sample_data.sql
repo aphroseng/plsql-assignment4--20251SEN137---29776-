@@ -4,21 +4,21 @@ SET SERVEROUTPUT ON;
 INSERT INTO patients
 (first_name, last_name, date_of_birth, gender, phone, email)
 SELECT 'Jean', 'Niyonzima', DATE '1998-04-12',
-       'Male', '+250788111111', 'jean.sample@example.com'
+       'Male', '+250788111111', 'jean.niyonzima@gmail.com'
 FROM dual
 WHERE NOT EXISTS (
     SELECT 1 FROM patients
-    WHERE email = 'jean.sample@example.com'
+    WHERE email = 'jean.niyonzima@gmail.com'
 );
 
 INSERT INTO patients
 (first_name, last_name, date_of_birth, gender, phone, email)
 SELECT 'Aline', 'Uwase', DATE '2000-09-20',
-       'Female', '+250788222222', 'aline.sample@example.com'
+       'Female', '+250788222222', 'aline.uwase@gmail.com'
 FROM dual
 WHERE NOT EXISTS (
     SELECT 1 FROM patients
-    WHERE email = 'aline.sample@example.com'
+    WHERE email = 'aline.uwase@gmail.com'
 );
 
 -- 2. INSERT SAMPLE DOCTORS
@@ -26,31 +26,31 @@ WHERE NOT EXISTS (
 INSERT INTO doctors
 (first_name, last_name, specialty, phone, email)
 SELECT 'Peter', 'Mugisha', 'Cardiology',
-       '+250788333333', 'peter.cardiology@example.com'
+       '+250788333333', 'peter.cardiology@gmail.com'
 FROM dual
 WHERE NOT EXISTS (
     SELECT 1 FROM doctors
-    WHERE email = 'peter.cardiology@example.com'
+    WHERE email = 'peter.cardiology@gmail.com'
 );
 
 INSERT INTO doctors
 (first_name, last_name, specialty, phone, email)
 SELECT 'Grace', 'Mukamana', 'Pediatrics',
-       '+250788444444', 'grace.pediatrics@example.com'
+       '+250788444444', 'grace.pediatrics@gmail.com'
 FROM dual
 WHERE NOT EXISTS (
     SELECT 1 FROM doctors
-    WHERE email = 'grace.pediatrics@example.com'
+    WHERE email = 'grace.pediatrics@gmail.com'
 );
 
 INSERT INTO doctors
 (first_name, last_name, specialty, phone, email)
 SELECT 'David', 'Habimana', 'Dermatology',
-       '+250788555555', 'david.dermatology@example.com'
+       '+250788555555', 'david.dermatology@gmail.com'
 FROM dual
 WHERE NOT EXISTS (
     SELECT 1 FROM doctors
-    WHERE email = 'david.dermatology@example.com'
+    WHERE email = 'david.dermatology@gmail.com'
 );
 
 -- 3. INSERT SAMPLE APPOINTMENTS
@@ -61,8 +61,8 @@ SELECT p.patient_id, d.doctor_id,
        SYSDATE + 2, 'SCHEDULED'
 FROM patients p
 CROSS JOIN doctors d
-WHERE p.email = 'jean.sample@example.com'
-  AND d.email = 'peter.cardiology@example.com'
+WHERE p.email = 'jean.niyonzima@gmail.com'
+  AND d.email = 'peter.cardiology@gmail.com'
   AND NOT EXISTS (
       SELECT 1 FROM appointments a
       WHERE a.patient_id = p.patient_id
