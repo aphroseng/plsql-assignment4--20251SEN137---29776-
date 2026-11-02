@@ -76,8 +76,8 @@ SELECT p.patient_id, d.doctor_id,
        SYSDATE + 3, 'SCHEDULED'
 FROM patients p
 CROSS JOIN doctors d
-WHERE p.email = 'aline.sample@example.com'
-  AND d.email = 'grace.pediatrics@example.com'
+WHERE p.email = 'aline.uwase@gmail.com'
+  AND d.email = 'grace.pediatrics@gmail.com'
   AND NOT EXISTS (
       SELECT 1 FROM appointments a
       WHERE a.patient_id = p.patient_id
@@ -91,8 +91,8 @@ SELECT p.patient_id, d.doctor_id,
        SYSDATE + 5, 'COMPLETED'
 FROM patients p
 CROSS JOIN doctors d
-WHERE p.email = 'jean.sample@example.com'
-  AND d.email = 'david.dermatology@example.com'
+WHERE p.email = 'jean.niyonzima@gmail.com'
+  AND d.email = 'david.dermatology@gmail.com'
   AND NOT EXISTS (
       SELECT 1 FROM appointments a
       WHERE a.patient_id = p.patient_id
@@ -106,8 +106,8 @@ SELECT p.patient_id, d.doctor_id,
        SYSDATE + 7, 'CANCELLED'
 FROM patients p
 CROSS JOIN doctors d
-WHERE p.email = 'aline.sample@example.com'
-  AND d.email = 'peter.cardiology@example.com'
+WHERE p.email = 'aline.uwase@gmail.com'
+  AND d.email = 'peter.cardiology@gmail.com'
   AND NOT EXISTS (
       SELECT 1 FROM appointments a
       WHERE a.patient_id = p.patient_id
